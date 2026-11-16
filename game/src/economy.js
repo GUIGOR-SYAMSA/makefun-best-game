@@ -1,0 +1,2 @@
+export const STORE=[['rifle','VXR-9 rifle',2700],['smg','KITE-45 SMG',1500],['shotgun','BREACH-12',1200],['sniper','LONGGLASS',4500],['smoke','Smoke grenade',300],['flash','Flash charge',200],['armor','Armor plate',650]];
+export function buy(s,item){if(s.phase!=='buy')return false;const x=STORE.find(a=>a[0]===item);if(!x||s.money<x[2])return false;s.money-=x[2];if(item==='armor')s.player.armor=Math.min(100,s.player.armor+50);else if(item==='smoke'||item==='flash')s.inventory[item]=(s.inventory[item]||0)+1;else{s.loadout=item;s.weapon=item}return true}

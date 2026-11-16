@@ -1,0 +1,3 @@
+export const C={amber:0xd7a85e,steel:0x526a78,dark:0x18252d,concrete:0x39464a,light:0xc8d0c7,red:0xb94b3f,blue:0x6aa5b5};
+export const TEAM={blue:'WARDENS',red:'RAIDERS'};
+export const GUNS={rifle:{name:'VXR-9',damage:34,rate:.105,mag:30,reload:1.65,spread:.018,recoil:.012,auto:true},smg:{name:'KITE-45',damage:22,rate:.067,mag:36,reload:1.45,spread:.035,recoil:.008,auto:true},shotgun:{name:'BREACH-12',damage:16,rate:.8,mag:8,reload:2.1,spread:.12,pellets:8},sniper:{name:'LONGGLASS',damage:95,rate:1.25,mag:5,reload:2.3,spread:.002,recoil:.04,scope:true},pistol:{name:'SIDEARM',damage:27,rate:.25,mag:12,reload:1.2,spread:.025}};
